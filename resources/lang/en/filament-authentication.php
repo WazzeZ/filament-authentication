@@ -20,6 +20,9 @@ return [
     'field.user.created_at'         => 'Joined',
     'field.user.password'           => 'Password',
     'field.user.confirm_password'   => 'Confirm Password',
+    'filed.user.current_password'   => 'Current Password',
+    'field.user.new_password'       => 'New Password',
+    'field.user.new_password_confirmation' => 'Confirm Password',
 
     'field.guard_name'              => 'Guard Name',
     'field.name'                    => 'Name',
@@ -49,4 +52,13 @@ return [
     'button.impersonate'            => "Impersonate User",
     'text.impersonating'            => 'Impersonating User: ',
     'text.impersonating.end'        => ' - End Impersonation ',
+
+    /*
+        |--------------------------------------------------------------------------
+        | Profile
+        |--------------------------------------------------------------------------
+    */
+    'profile.breadcrumb'                   => '​Profile',
+    'profile.section.general'              => 'General',
+    'profile.section.update-password'      => 'Update Password',
 ];

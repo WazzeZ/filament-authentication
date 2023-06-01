@@ -20,6 +20,10 @@ return [
     'field.user.created_at'         => 'Tham gia lúc',
     'field.user.password'           => 'Mật khẩu',
     'field.user.confirm_password'   => 'Mật khẩu xác nhận',
+    'filed.user.current_password'   => 'Current Password',
+    'field.user.new_password'       => 'New Password',
+    'field.user.new_password_confirmation' => 'Confirm Password',
+
 
     'field.guard_name'              => 'Tên guard',
     'field.name'                    => 'Tên',
@@ -49,4 +53,13 @@ return [
     'button.impersonate'            => "Người dùng mạo danh",
     'text.impersonating'            => 'Mạo danh người dùng: ',
     'text.impersonating.end'        => ' - Kết thúc Mạo danh ',
+
+    /*
+        |--------------------------------------------------------------------------
+        | Profile
+        |--------------------------------------------------------------------------
+    */
+    'profile.breadcrumb'                   => '​Profile',
+    'profile.section.general'              => 'General',
+    'profile.section.update-password'      => 'Update Password',
 ];

@@ -86,27 +86,28 @@ class Profile extends Page
     protected function getBreadcrumbs(): array
     {
         return [
-            url()->current() => 'Profile',
+            url()->current() => strval(__('filament-authentication::filament-authentication.profile.breadcrumb')),
         ];
     }
 
     protected function getFormSchema(): array
     {
         return [
-            Section::make('General')
+            Section::make(strval(__('filament-authentication::filament-authentication.profile.section.general')))
                 ->columns(2)
                 ->schema([
                     TextInput::make('name')
+                        ->label(strval(__('filament-authentication::filament-authentication.field.user.name')))
                         ->required(),
                     TextInput::make('email')
-                        ->label('Email Address')
+                        ->label(strval(__('filament-authentication::filament-authentication.field.user.email')))
                         ->required(),
                 ]),
-            Section::make('Update Password')
+            Section::make(strval(__('filament-authentication::filament-authentication.profile.section.update-password')))
                 ->columns(2)
                 ->schema([
                     TextInput::make('current_password')
-                        ->label('Current Password')
+                        ->label(__('filament-authentication::filament-authentication.filed.user.current_password'))
                         ->password()
                         ->rules(['required_with:new_password'])
                         ->currentPassword()
@@ -115,12 +116,11 @@ class Profile extends Page
                     Grid::make()
                         ->schema([
                             TextInput::make('new_password')
-                                ->label('New Password')
-                                ->password()
+                                ->label(strval(__('filament-authentication::filament-authentication.field.user.new_password')))
                                 ->rules(['confirmed', Password::defaults()])
                                 ->autocomplete('new-password'),
                             TextInput::make('new_password_confirmation')
-                                ->label('Confirm Password')
+                                ->label(strval(__('filament-authentication::filament-authentication.field.user.new_password_confirmation')))
                                 ->password()
                                 ->rules([
                                     'required_with:new_password',

@@ -20,6 +20,10 @@ return [
     'field.user.created_at'         => 'Criado em',
     'field.user.password'           => 'Senha',
     'field.user.confirm_password'   => 'Confimação da Senha',
+    'filed.user.current_password'   => 'Current Password',
+    'field.user.new_password'       => 'New Password',
+    'field.user.new_password_confirmation' => 'Confirm Password',
+
 
     'field.guard_name'              => 'Nome do Guarda',
     'field.name'                    => 'Nome',
@@ -49,4 +53,13 @@ return [
     'button.impersonate'            => "Personificar Usuário",
     'text.impersonating'            => 'Personificando o Usuário: ',
     'text.impersonating.end'        => ' - Encerrar Perssonificação ',
+
+    /*
+        |--------------------------------------------------------------------------
+        | Profile
+        |--------------------------------------------------------------------------
+    */
+    'profile.breadcrumb'                   => '​Profile',
+    'profile.section.general'              => 'General',
+    'profile.section.update-password'      => 'Update Password',
 ];
